@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6B4226; /* สีน้ำตาลเข้ม */
+    color: white;
+    padding: 1em 20px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Clearfix */
+}
+
+.header-image {
+    float: left; /* รูปภาพไปทางซ้าย */
+    width: 60px; /* กำหนดขนาดของรูปภาพ */
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
+    margin-right: 20px; /* เว้นระยะห่างระหว่างรูปภาพและข้อความ */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.2; /* ปรับความสูงของบรรทัดเพื่อให้ข้อความไม่ชนรูปภาพ */
+    overflow: hidden; /* Clearfix สำหรับข้อความ */
+}
+
+.places {
+    padding: 0 10px;
+    overflow: hidden; /* Clearfix */
+}
+
+.place {
+    width: calc(22.50% - 1rem); 
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+    float: left; 
+    margin-right: 1rem; 
+    margin-bottom: 1rem;
+}
+
+.place img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.place h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #6B4226; /* สีน้ำตาลเข้ม */
+}
+
+.place p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .place {
+        width: calc(50% - 10px); /* ใช้ 50% สำหรับหน้าจอขนาดกลาง */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .place {
+        width: calc(100% - 10px); /* ใช้ 100% สำหรับหน้าจอขนาดเล็ก */
+    }
+}
